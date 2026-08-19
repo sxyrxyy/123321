@@ -10,13 +10,13 @@ endobj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 7 0 R >> >> >>
 endobj
 4 0 obj
-<< /Length 82 >>
+<< /Length 103 >>
 stream
-BT /F1 14 Tf 60 720 Td (SANDBOX TEST - PDF tries to Launch calc.exe on open) Tj ET
+BT /F1 13 Tf 54 720 Td (SANDBOX TEST - PDF Launch action targets C:\\Windows\\System32\\calc.exe) Tj ET
 endstream
 endobj
 5 0 obj
-<< /Type /Action /S /Launch /Win << /F (calc.exe) >> /F (calc.exe) >>
+<< /Type /Action /S /Launch /Win << /F (C:\\Windows\\System32\\calc.exe) >> /F (C:\\Windows\\System32\\calc.exe) >>
 endobj
 6 0 obj
 << /Names [ (calc) 8 0 R ] >>
@@ -25,7 +25,7 @@ endobj
 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
 endobj
 8 0 obj
-<< /Type /Action /S /JavaScript /JS (try{app.launchURL('calc.exe',true);}catch(e){}try{this.exportDataObject({cName:'x'});}catch(e){}) >>
+<< /Type /Action /S /JavaScript /JS (try{app.launchURL('C:\\\\Windows\\\\System32\\\\calc.exe',true);}catch(e){}) >>
 endobj
 xref
 0 9
@@ -34,12 +34,12 @@ xref
 0000000113 00000 n 
 0000000170 00000 n 
 0000000296 00000 n 
-0000000428 00000 n 
-0000000513 00000 n 
-0000000558 00000 n 
-0000000628 00000 n 
+0000000450 00000 n 
+0000000581 00000 n 
+0000000626 00000 n 
+0000000696 00000 n 
 trailer
 << /Size 9 /Root 1 0 R >>
 startxref
-781
+828
 %%EOF
