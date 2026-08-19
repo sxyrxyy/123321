@@ -1,0 +1,10 @@
+# Authorization & sensitive session files (local-only)
+AUTHORIZATION.md
+REPORT.md
+*.local.md
+
+# Build/scratch
+*.swp
+*.swo
+*~
+.DS_Store
